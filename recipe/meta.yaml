@@ -11,20 +11,20 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv --no-deps"
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - versioneer-518
   run:
-    - python >=3.8
+    - python >=3.9
     - click
     - click-option-group
     - tqdm
-    - openff-toolkit >=0.11.0
+    - openff-toolkit-base >=0.11.0
     - openff-units
     - pydantic
     - sqlalchemy
