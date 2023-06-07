@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: 2b5715f64ec0a2a0ee94bbce1604750217a9111898623dd6801dbd5a73fdb8dd
+  sha256: 681ae07a6e3cc3d07f19e9c715f8170cc727b5212322667d7a79387b130c306f
 
 build:
   noarch: python
