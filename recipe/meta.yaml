@@ -13,7 +13,7 @@ build:
   number: 0
   
 
-output:
+outputs:
   - name: openff-nagl-base
     script: "{{ PYTHON }} -m pip install . -vv --no-deps"
     build:
