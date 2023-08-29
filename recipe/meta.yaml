@@ -41,13 +41,19 @@ output:
         - openff.nagl
 
   - name: openff-nagl
-    host:
-      - python >=3.9
-    run:
-      - python >=3.9
-      - dgl >=1.0
-      - dask-jobqueue
-      - {{ pin_subpackage('openff-nagl-base', exact=True) }}
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.9
+      run:
+        - python >=3.9
+        - dgl >=1.0
+        - dask-jobqueue
+        - {{ pin_subpackage('openff-nagl-base', exact=True) }}
+    test:
+      imports:
+        - openff.nagl
 
 about:
   home: https://openforcefield.org/
