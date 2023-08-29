@@ -10,12 +10,11 @@ source:
   sha256: 71efbe79bb6d113b831a82cb81fd4ce0b05096e11cee4ad6def9dcc468142921
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
-  
+  number: 0  
 
 outputs:
   - name: openff-nagl-base
+    script: build_base.sh
     build:
       noarch: python
     requirements:
