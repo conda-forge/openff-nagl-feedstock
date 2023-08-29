@@ -1,42 +1,58 @@
 {% set name = "openff-nagl" %}
-{% set version = "0.3.0rc1" %}
+{% set version = "0.3.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: openff-toolkit-split
   version: {{ version }}
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: 53b2a960eaac25524cfcab1c2747860a5d20710a95e2fa8e3ba82266bdd83302
+  sha256: dca36bf0647c66cd89faf427e6aeaa43134252f3f684de46d35abe0abf8f89f5
 
 build:
-  noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
+  number: 0  
 
-requirements:
-  host:
-    - python >=3.8
-    - pip
-    - versioneer-518
-  run:
-    - python >=3.8
-    - click
-    - click-option-group
-    - tqdm
-    - openff-toolkit-base >=0.11.0
-    - openff-units
-    - pyarrow
-    - pydantic <3
-    - pytorch
-    - pytorch-lightning
-    - rdkit
-    - rich
+outputs:
+  - name: openff-nagl-base
+    script: build_base.sh
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.9
+        - pip
+        - versioneer-518
+      run:
+        - python >=3.9
+        - click
+        - click-option-group
+        - tqdm
+        - openff-toolkit-base >=0.11.0
+        - openff-units
+        - pyarrow
+        - pydantic <3
+        - pytorch
+        - pytorch-lightning
+        - rdkit
+        - rich
+    test:
+      imports:
+        - openff.nagl
 
-
-test:
-  imports:
-    - openff.nagl
+  - name: openff-nagl
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.9
+      run:
+        - python >=3.9
+        - dgl >=1.0
+        - dask-jobqueue
+        - {{ pin_subpackage('openff-nagl-base', exact=True) }}
+    test:
+      imports:
+        - openff.nagl
 
 about:
   home: https://openforcefield.org/

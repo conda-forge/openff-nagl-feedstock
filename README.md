@@ -1,5 +1,5 @@
-About openff-nagl-feedstock
-===========================
+About openff-toolkit-split-feedstock
+====================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-nagl-feedstock/blob/main/LICENSE.txt)
 
@@ -30,27 +30,28 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-openff--nagl-green.svg)](https://anaconda.org/conda-forge/openff-nagl) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openff-nagl.svg)](https://anaconda.org/conda-forge/openff-nagl) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openff-nagl.svg)](https://anaconda.org/conda-forge/openff-nagl) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openff-nagl.svg)](https://anaconda.org/conda-forge/openff-nagl) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-openff--nagl--base-green.svg)](https://anaconda.org/conda-forge/openff-nagl-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openff-nagl-base.svg)](https://anaconda.org/conda-forge/openff-nagl-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openff-nagl-base.svg)](https://anaconda.org/conda-forge/openff-nagl-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openff-nagl-base.svg)](https://anaconda.org/conda-forge/openff-nagl-base) |
 
-Installing openff-nagl
-======================
+Installing openff-toolkit-split
+===============================
 
-Installing `openff-nagl` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `openff-toolkit-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `openff-nagl` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `openff-nagl, openff-nagl-base` can be installed with `conda`:
 
 ```
-conda install openff-nagl
+conda install openff-nagl openff-nagl-base
 ```
 
 or with `mamba`:
 
 ```
-mamba install openff-nagl
+mamba install openff-nagl openff-nagl-base
 ```
 
 It is possible to list all of the versions of `openff-nagl` available on your platform with `conda`:
@@ -120,17 +121,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating openff-nagl-feedstock
-==============================
+Updating openff-toolkit-split-feedstock
+=======================================
 
-If you would like to improve the openff-nagl recipe or build a new
+If you would like to improve the openff-toolkit-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/openff-nagl-feedstock are
+Note that all branches in the conda-forge/openff-toolkit-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
