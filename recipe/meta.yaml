@@ -1,5 +1,5 @@
 {% set name = "openff-nagl" %}
-{% set version = "0.3.0rc1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: 53b2a960eaac25524cfcab1c2747860a5d20710a95e2fa8e3ba82266bdd83302
+  sha256: 71efbe79bb6d113b831a82cb81fd4ce0b05096e11cee4ad6def9dcc468142921
 
 build:
   noarch: python
