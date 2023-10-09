@@ -47,7 +47,7 @@ outputs:
         - python >=3.9
       run:
         - python >=3.9
-        - openff-nagl-models
+        - openff-nagl-models >= 0.1.0
         - dgl >=1.0
         - dask-jobqueue
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
