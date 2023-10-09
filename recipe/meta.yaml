@@ -54,6 +54,10 @@ outputs:
     test:
       imports:
         - openff.nagl
+      files:
+        - test_models_loadable.py
+      commands:
+        - python test_models_loadable.py
 
 about:
   home: https://openforcefield.org/
