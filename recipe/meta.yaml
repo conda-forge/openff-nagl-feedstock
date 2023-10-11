@@ -10,7 +10,7 @@ source:
   sha256: 143282f824ad13854b0d8a9288746e6f60b96d026877f36058e58a29a9c593db
 
 build:
-  number: 0  
+  number: 1
 
 outputs:
   - name: openff-nagl-base
@@ -47,12 +47,17 @@ outputs:
         - python >=3.9
       run:
         - python >=3.9
+        - openff-nagl-models >=0.1.0
         - dgl >=1.0
         - dask-jobqueue
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
     test:
       imports:
         - openff.nagl
+      files:
+        - test_models_loadable.py
+      commands:
+        - python test_models_loadable.py
 
 about:
   home: https://openforcefield.org/
