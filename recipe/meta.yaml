@@ -52,6 +52,7 @@ outputs:
         - openff-nagl-models >=0.1.0
         - dgl >=1.0
         - dask-jobqueue
+        - openff-recharge
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
     test:
       imports:
