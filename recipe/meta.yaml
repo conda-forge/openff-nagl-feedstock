@@ -1,5 +1,5 @@
 {% set name = "openff-nagl" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: openff-toolkit-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: 015149c31864ec3fa3fea940852841512821006bf943400b3eb5cf5215cd186c
+  sha256: e3db29b0ba2812933d5b90438c7f25b9117622a005dfacf85cd591cff21ac9f0
 
 build:
   number: 0
@@ -26,9 +26,11 @@ outputs:
         - python >=3.9
         - click
         - click-option-group
+        - importlib_resources
         - tqdm
         - openff-toolkit-base >=0.11.0
         - openff-units
+        - pyyaml
         - pyarrow
         - pydantic <3
         - pytorch
