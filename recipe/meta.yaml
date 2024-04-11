@@ -1,5 +1,5 @@
 {% set name = "openff-nagl" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 package:
   name: openff-toolkit-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: 98ecacf42f95718da779b4f4b1c945d422663169d7cf9b9316c1af7f60bb9aaa
+  sha256: c8d4cfe3cf865a277e047f5046ebb97674c8b92253abc788caca62ac8e197dbf
 
 build:
   number: 0
