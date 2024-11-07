@@ -30,7 +30,7 @@ outputs:
         - importlib_resources
         - tqdm
         - openff-toolkit-base >=0.11.0
-        - openff-units
+        - openff-units !=0.2.3  # Shim https://github.com/conda-forge/openff-nagl-feedstock/pull/33#issuecomment-2461312240
         - pyyaml
         - pydantic <3
         - pytorch >=2.0
