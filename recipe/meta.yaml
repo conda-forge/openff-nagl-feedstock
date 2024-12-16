@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "openff-nagl" %}
 {% set version = "0.5.0" %}
 
@@ -10,7 +11,7 @@ source:
   sha256: ccba5e871f43d4bf768d2b51d2d96733041091612e44dccd85f0c4f278fd7404
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: openff-nagl-base
@@ -19,12 +20,12 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
         - pip
         - setuptools
         - versioneer-518
       run:
-        - python >=3.10
+        - python >={{ python_min }}
         - click
         - click-option-group
         - importlib_resources
@@ -38,6 +39,8 @@ outputs:
         - rdkit
         - rich
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - openff.nagl
 
@@ -46,9 +49,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.10
+        - python {{ python_min }}
       run:
-        - python >=3.10
+        - python >={{ python_min }}
         - openff-nagl-models >=0.1.0
         - pyarrow
         - dgl >=1.0,<=2.1
@@ -56,6 +59,8 @@ outputs:
         - openff-recharge
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - openff.nagl
       files:
