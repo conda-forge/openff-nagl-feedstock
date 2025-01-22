@@ -1,5 +1,5 @@
-About openff-toolkit-split-feedstock
-====================================
+About openff-nagl-split-feedstock
+=================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-nagl-feedstock/blob/main/LICENSE.txt)
 
@@ -32,10 +32,10 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-openff--nagl-green.svg)](https://anaconda.org/conda-forge/openff-nagl) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openff-nagl.svg)](https://anaconda.org/conda-forge/openff-nagl) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openff-nagl.svg)](https://anaconda.org/conda-forge/openff-nagl) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openff-nagl.svg)](https://anaconda.org/conda-forge/openff-nagl) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-openff--nagl--base-green.svg)](https://anaconda.org/conda-forge/openff-nagl-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/openff-nagl-base.svg)](https://anaconda.org/conda-forge/openff-nagl-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/openff-nagl-base.svg)](https://anaconda.org/conda-forge/openff-nagl-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/openff-nagl-base.svg)](https://anaconda.org/conda-forge/openff-nagl-base) |
 
-Installing openff-toolkit-split
-===============================
+Installing openff-nagl-split
+============================
 
-Installing `openff-toolkit-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `openff-nagl-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -121,17 +121,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating openff-toolkit-split-feedstock
-=======================================
+Updating openff-nagl-split-feedstock
+====================================
 
-If you would like to improve the openff-toolkit-split recipe or build a new
+If you would like to improve the openff-nagl-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/openff-toolkit-split-feedstock are
+Note that all branches in the conda-forge/openff-nagl-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
