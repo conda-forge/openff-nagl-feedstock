@@ -11,7 +11,7 @@ source:
   sha256: 80282fd41211af201959707015ef6f619e9930e95f427de31b384ce91a8c9c7e
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: openff-nagl-base
@@ -31,7 +31,7 @@ outputs:
         - importlib_resources
         - tqdm
         - openff-toolkit-base >=0.11.0
-        - openff-units !=0.2.3  # Shim https://github.com/conda-forge/openff-nagl-feedstock/pull/33#issuecomment-2461312240
+        - openff-units
         - pyyaml
         - pydantic <3
         - pytorch >=2.0,<=2.6
@@ -54,7 +54,6 @@ outputs:
         - python >={{ python_min }}
         - openff-nagl-models >=0.1.0
         - pyarrow
-        - dgl >=1.0,<=2.1
         - dask-jobqueue
         - openff-recharge
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
