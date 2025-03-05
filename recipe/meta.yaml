@@ -53,9 +53,6 @@ outputs:
       run:
         - python >={{ python_min }}
         - openff-nagl-models >=0.1.0
-        - pyarrow
-        - dask-jobqueue
-        - openff-recharge
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
     test:
       requires:
