@@ -38,6 +38,8 @@ outputs:
         - pytorch-lightning
         - rdkit
         - rich
+      run_constrained:
+        - dgl >=1.0,<=3
     test:
       requires:
         - python {{ python_min }}
