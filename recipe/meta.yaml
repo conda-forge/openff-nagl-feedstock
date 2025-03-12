@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: 80282fd41211af201959707015ef6f619e9930e95f427de31b384ce91a8c9c7e
+  sha256: c93ea4824aab37cff878b7ca9569677e72516f7ccd762a3eb557c80a9c8f9b46
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: openff-nagl-base
@@ -31,13 +31,15 @@ outputs:
         - importlib_resources
         - tqdm
         - openff-toolkit-base >=0.11.0
-        - openff-units !=0.2.3  # Shim https://github.com/conda-forge/openff-nagl-feedstock/pull/33#issuecomment-2461312240
+        - openff-units
         - pyyaml
         - pydantic <3
         - pytorch >=2.0,<=2.6
         - pytorch-lightning
         - rdkit
         - rich
+      run_constrained:
+        - dgl >=1.0,<=3
     test:
       requires:
         - python {{ python_min }}
@@ -53,10 +55,6 @@ outputs:
       run:
         - python >={{ python_min }}
         - openff-nagl-models >=0.1.0
-        - pyarrow
-        - dgl >=1.0,<=2.1
-        - dask-jobqueue
-        - openff-recharge
         - {{ pin_subpackage('openff-nagl-base', exact=True) }}
     test:
       requires:
