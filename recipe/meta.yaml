@@ -11,7 +11,7 @@ source:
   sha256: 771dc8a18c2ce4127d99e755bd3e10493d38e883867cf2c617df7b261d9ac8e9
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: openff-nagl-base
@@ -39,6 +39,7 @@ outputs:
         - rich
       run_constrained:
         - dgl >=1.0,<=3
+        - openeye-toolkits >=2025
     test:
       requires:
         - python {{ python_min }}
