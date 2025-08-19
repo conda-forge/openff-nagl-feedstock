@@ -39,7 +39,7 @@ outputs:
         - rich
       run_constrained:
         - dgl >=1.0,<=3
-	- openeye-toolkits >=2025
+        - openeye-toolkits >=2025
     test:
       requires:
         - python {{ python_min }}
