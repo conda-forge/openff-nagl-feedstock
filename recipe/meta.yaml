@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-nagl/archive/v{{ version }}.tar.gz
-  sha256: b4f4f258be99305249e1af8190285be826b2350fb5aad104ccb82d2cf317dc1f
+  sha256: 85c09a6da7bdb01c049866e1dd6a414980103c1a8147f6c5c4207d2277096da9
 
 build:
   number: 1
