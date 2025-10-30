@@ -10,7 +10,7 @@ source:
   sha256: 85c09a6da7bdb01c049866e1dd6a414980103c1a8147f6c5c4207d2277096da9
 
 build:
-  number: 2
+  number: 1
 
 outputs:
   - name: openff-nagl-base
