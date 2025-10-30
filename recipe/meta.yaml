@@ -2,7 +2,7 @@
 {% set version = "0.5.4" %}
 
 package:
-  name: openff-nagl
+  name: openff-nagl-split
   version: {{ version }}
 
 source:
