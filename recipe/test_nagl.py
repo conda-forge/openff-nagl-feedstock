@@ -10,5 +10,5 @@ assert len(list_available_nagl_models()) > 0
 molecule = Molecule.from_smiles("CC(=O)OC1=CC=CC=C1C(=O)O")
 
 molecule.assign_partial_charges(
-    partial_charge_method=list_available_nagl_models()[-1],
+    partial_charge_method="openff-gnn-am1bcc-1.0.0.pt",
 )
