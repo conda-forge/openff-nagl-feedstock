@@ -10,7 +10,7 @@ source:
   sha256: c5da76bdec409c4eef46c5a281f5994b0b0e29aab6dee6e0798d5594dba0de72
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: openff-nagl-base
@@ -32,7 +32,7 @@ outputs:
         - openff-units
         - pyyaml
         - pydantic <3
-        - pytorch >=2.0,<=2.8
+        - pytorch >=2.0,<=2.13
         - pytorch-lightning
         - rdkit
         - rich
