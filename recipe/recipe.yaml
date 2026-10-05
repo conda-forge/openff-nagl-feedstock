@@ -40,7 +40,6 @@ outputs:
         - pytorch >=2.6
         - pytorch-lightning
         - rdkit
-        - rich
       run_constraints:
         - dgl >=1.0,<=3
         - openeye-toolkits
