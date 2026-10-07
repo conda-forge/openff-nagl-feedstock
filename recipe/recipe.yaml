@@ -13,7 +13,7 @@ source:
   sha256: 423aba5bf57db461d8021cdf9e0dc69f9b289d2cd27b6d2735ac9e62dddacd94
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -40,7 +40,6 @@ outputs:
         - pytorch >=2.6
         - pytorch-lightning
         - rdkit
-        - rich
       run_constraints:
         - dgl >=1.0,<=3
         - openeye-toolkits
